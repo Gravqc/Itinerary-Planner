@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link to custom css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- link to bootrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- nav-bar  -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-md">
+            <a class="navbar-brand" href="#intro">
+                <span class="fw-bold text-secondary custom-hover-2">
+                    <i class="bi bi-airplane-fill me-2"></i>Tora
+                </span>
+            </a>
+            <!-- toggle button for mobile nav -->
+            <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- nav-bar links -->
+            <div class="collapse navbar-collapse justify-content-between" id="main-nav">
+                <ul class="navbar-nav d-flex justify-content-center flex-grow-1 pe-3 ">
+                    <li class="nav-item">
+                        <a href="#create" class="nav-link fs-2 px-4 custom-hover text-dark">Create Trip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#view" class="nav-link fs-2 px-4 custom-hover text-dark">View Trips</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link fs-3 custom-hover-2"><i class="bi bi-person-fill"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main intro -->
+    <section id="intro">
+        <div class="continer-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-7 text-center">
+                    <h1>
+                        <div class="display-2 text-secondary">Tora</div>
+                        <div class="display-3 text-secondary">
+                            An Itinerary Planner
+                        </div>
+                    </h1>
+                    <p class="lead">
+                        Tora eliminates all the messy trip planning by keeping it simple
+                    </p>
+                    <a href="#features" class="btn btn-primary btn-lg">Explore</a>
+                </div>
+                <div class="col-md-5 text-center py-5">
+                    <img src="images/main.jpg" alt="" class="img-fluid" style="height: 500px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features....what you can do -->
+    <section id="features" class="bg-light mt-5">
+        <div class="continer-md">
+            <div class="text-center">
+                <h2 class="display-3 text-primary">Features</h2>
+                <p class="lead text-dark">What You Can Do</p>
+            </div>
+            <div class="row my-5 justify-content-around align-items-center">
+                <div class="col-6 col-md-6 ps-5 mb-3">
+                    <img src="images/img-1.jpg" alt="" class="img-fluid d-none d-md-block h-500 h-sm-300">
+                </div>
+                <!-- Accordion -->
+                <div class="col-lg-6">
+                    <div class="accordion" id="accodionExample">
+                        <!-- item1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingone">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Add your favourite must visit places,restaurants and activities
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingone"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae suscipit,
+                                        nihil cupiditate, officia, quidem illum enim aut ipsum explicabo quaerat ad
+                                        perspiciatis ratione laborum alias!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingtwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+                                    Customise the itinerary for each day of the trip
+                            </h2>
+                            <div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingtwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum a quia animi,
+                                        rem laborum voluptate corrupti excepturi, odio est magnam quisquam quaerat.
+                                        Iusto, beatae obcaecati.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingthree">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+                                    Invite friends and family to view and.or edit the itenary
+                            </h2>
+                            <div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingthree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti harum quis a,
+                                        tenetur dignissimos magnam at rem reprehenderit esse architecto vitae. Odit,
+                                        velit? Dicta, inventore!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- create new trip -->
+    <section id="create">
+        <div class="container-lg justify-content-center align-items-center">
+            <div class="text-center">
+                <h2 class="display-3 text-primary">Create a new Trip</h2>
+                <p class="lead text-muted">
+                    Add the basic details of your trip such as location,description and dates
+                </p>
+            </div>
+            <form>
+                <div class="form-group my-5 mx-5 px-5">
+                    <label for="formGroupExampleInput">
+                        <h4 class="display-5"">Location</h4>
+                  </label>
+                  <input type=" text" class="form-control" id="location_user" placeholder="Enter Location">
+                </div>
+                <div class="form-group my-5 mx-5 px-5">
+                    <label for="formGroupExampleInput">
+                        <h4 class="display-5">Description</h4>
+                    </label>
+                    <input type="text" class="form-control" id="description_user" placeholder="Enter Description">
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group mx-5 px-5">
+                            <label for="formGroupExampleInput">
+                                <h4 class="display-6">Start Date</h4>
+                            </label>
+                            <input type="date" class="form-control" id="start_date_user" placeholder="Start Date">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group mx-5 px-5">
+                            <label for="formGroupExampleInput">
+                                <h4 class="display-6">End Date</h4>
+                            </label>
+                            <input type="date" class="form-control" id="finish_data_user" placeholder="End Date">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="text-center">
+                <div class="btn btn-primary btn-lg mt-5 fs-3" id="create_button">Create</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- view trips -->
+    <section id="view" class="bg-light">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="display-3 text-primary">
+                    View Trips
+                </h2>
+                <p class="lead text-dark">Hover over a trip to start customising your itinerary</p>
+            </div>
+            <div class="container-lg">
+                <div class="row" id="card_container">
+                    <div class="col">
+                        <div class="card hover-card " data-bs-toggle="modal" data-bs-target="#exampleModalCenter"
+                            style="width: 18rem;">
+
+
+                            <img class="card-img-top img-fluid" src="images/paris.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">Card title</h5>
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the
+                                    card's
+                                    content
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <h6>Start Date: 16/01/2023</h6>
+                                    </div>
+                                    <div class="col">
+                                        <h6>End Date: 17/02/2023</h6>
+                                    </div>
+                                </div>
+
+                                <a href="" class="btn btn-primary d-none">Edit</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- edit -->
+
+    <!-- edit -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-center modal-xl bg-white" style="border-radius: 10px;" role="document">
+            <div class="modal-content">
+                <div class="close-button mb-4">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x"></i>
+                    </button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body ">
+                    <div class="container-fluid">
+                        <div class="row row-outline">
+                            <!-- Packing List Column -->
+                            <div class="col-md column-outline">
+                                <h4 class="fs-3 text-center text-primary">Packing List</h4>
+                                <div class="row align-items-center">
+                                    <div class="col-md-11">
+                                        <input type=" text" class="form-control" id="packing_user"
+                                            placeholder="Add new item">
+                                    </div>
+                                    <div class="col-md-1 d-flex justify-content-center align-items-center fs-4 ps-1 pb-1"
+                                        id="packing_button">
+                                        <i class="bi bi-plus-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="list-group list-group-flush packing_container">
+                                            <li class="list-group-item trip-item text-danger">
+                                                Item 1
+                                            </li>
+                                            <li class="list-group-item trip-item text-danger">
+                                                Item 2
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <!-- Activities Column -->
+                            <div class="col-md column-outline">
+                                <h4 class="fs-3 text-center text-primary">Activities</h4>
+                                <div class="row align-items-center">
+                                    <div class="col-md-11">
+                                        <input type=" text" class="form-control" id="activities_user"
+                                            placeholder="Add new item">
+                                    </div>
+                                    <div class="col-md-1 d-flex justify-content-center align-items-center fs-4 ps-1 pb-1"
+                                        id="activities_button">
+                                        <i class="bi bi-plus-circle"></i>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="list-group list-group-flush activities_container">
+                                            <li class="list-group-item trip-item text-danger">
+                                                Item 1
+                                            </li>
+                                            <li class="list-group-item trip-item text-danger">
+                                                Item 2
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Places Column -->
+                            <div class="col-md column-outline">
+                                <h4 class="fs-3 text-center text-primary">Places</h4>
+                                <div class="row align-items-center">
+                                    <div class="col-md-11">
+                                        <input type=" text" class="form-control" id="places_user"
+                                            placeholder="Add new item">
+                                    </div>
+                                    <div class="col-md-1 d-flex justify-content-center align-items-center fs-4 ps-1 pb-1"
+                                        id="places_button">
+                                        <i class="bi bi-plus-circle"></i>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="list-group list-group-flush places_container">
+                                            <li class="list-group-item trip-item text-danger">
+                                                Item 1
+                                            </li>
+                                            <li class="list-group-item trip-item text-danger">
+                                                Item 2
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- link to bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- custom javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
