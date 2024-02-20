@@ -1,0 +1,90 @@
+section{
+    padding: 60px 0;
+}
+#intro{
+    padding: 0px 0;
+}
+.nav-link.custom-hover {
+    transition: font-size 0.25s ease-in-out;
+}
+.nav-link.custom-hover:hover {
+    font-size: 2.5rem !important; /* Example size, adjust as needed */
+    transition: 0.25s;
+}
+.custom-hover-2 {
+    transition: color 0.25s ease-in-out;
+}
+
+.custom-hover-2:hover {
+    color: pink !important;
+}
+/* Custom utility classes for height */
+.h-500 {
+    height: 500px !important;
+  }
+  
+  @media (max-width: 576px) {
+    .h-sm-300 {
+      height: 300px !important;
+      width: 200px !important;
+    }
+  }
+  
+  .card.hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer; 
+  }
+  
+  .card.hover-card:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  }
+  .card-img-top {
+    max-height: 250px; 
+    width: auto; 
+    object-fit:cover; 
+  }
+  .custom-card-link, .custom-card-link:hover, .custom-card-link:focus, .custom-card-link:active {
+    text-decoration: none; 
+    color: inherit; 
+    outline: none; 
+}
+.close-button{
+    position: relative;
+    cursor: pointer;
+}
+.close {
+    position: absolute;
+    font-size: .8em;
+    top: 0.5rem;
+    right: 1rem;
+    z-index: 2; 
+}
+/* for the outline in the edit itinerary modal */
+.column-outline {
+    border: 2px dotted #B5C0D0; 
+    padding: 15px; 
+    margin-bottom: 15px; /
+  }
+  
+  /* Responsive adjustments */
+  @media (min-width: 768px) {
+    .row-outline > [class^="col-"] {
+      margin-right: 15px; 
+      margin-left: 15px; 
+    }
+  
+    /* Adjust the last child to not have a right margin to maintain alignment */
+    .row-outline > [class^="col-"]:last-child {
+      margin-right: 0;
+    }
+  }
+#packing_button, #activities_button, #places_button{
+    cursor: pointer;
+}
+.trip-item{
+    font-size: 1.25rem !important;
+    list-style-type: disc !important;
+    
+}
+  
